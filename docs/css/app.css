@@ -4027,6 +4027,11 @@ button, .button {
     display: inline-block;
     float: left; }
 
+#location {
+    color: white;
+    background: #222222 url(../img/white-bg.png);
+    background-image: url(../img/dark-bg.jpg);
+}
 #location .row {
   overflow: hidden; }
 #location .address span {
@@ -4057,7 +4062,7 @@ button, .button {
   box-shadow: 17px 19px 20px 0px black; }
 
 .map-address-heading {
-  color: #00aa5b;
+  color: white;
   text-align: center; }
 
 #about {
