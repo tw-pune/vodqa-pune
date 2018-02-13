@@ -11,7 +11,7 @@
                     <img class="small-8" src="./img/Vodqa-white.png" alt="VodQA" align="center" />
                 </div>
                 <meta property="og:description" />
-                <h9>VodQA is an opportunity for testing enthusiast to get together, network and collaborate on the latest developments in software testing world.</h9>
+                <h9></h9>
 
                 <% if @item[:subheader] %>
                     <h6 class="subheader"><%= @item[:subheader] %></h6>
@@ -24,8 +24,8 @@
 
         <div class="row countdown">
             <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
-                <p><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> edition</p>
-                <h4><%= start_date.strftime("%b %-d").downcase %></h4>
+                <p><%= start_date.strftime("%B %-d").downcase%></sup></p>
+                <h4><%= start_date.strftime("%Y").downcase %></h4>
             </div>
             <div class="small-6 large-2 columns counter">
                 <h4><span id="days">&nbsp;</span></h4>
@@ -50,11 +50,11 @@
             </div>
         </div>
 
-        <div class="row actions">
-            <div class="large-5 columns participate">
+        <div class="row actions" >
+            <div class="large-12 columns participate" align="center">
                 <% if item[:participate] %>
                     <p>
-                    <a href="<%= @item[:participate] %>" target="_blank" rel="nofollow"
+                    <a href="https://goo.gl/forms/BGOe1dLPLWNrwT6E2" target="_blank" rel="nofollow"
                    onclick="ga('send', 'event', 'participate', 'participate')">
                     <h4>Participate</h4>
                     </a>
@@ -79,39 +79,7 @@
                     <% end %>
                 <% end %>
             </div>
-            <div class="large-2 columns participate-or-talk">
-                <hr class="show-for-small" />
-                <h6 class="hide-for-small delimiter">&laquo; or &raquo;</h6>
-            </div>
-            <div class="large-5 columns talk">
-                <% if item[:talk] %>
-                    <p>
-                    <a href="<%= @item[:talk] %>" target="_blank" rel="nofollow"
-                       onclick="ga('send', 'event', 'talk', 'talk')">
-                        <h4>Present
-                        </h4>
-                    </a>
-                    <p>
-                    to share exciting new stuff <br />
-                    <small>(accepted for this and subsequent editions)</small>
-                    </p>
-                <% else %>
-                    <a href="javascript:void(0)">
-                        <h4><strike>Talk</strike></h4>
-                    </a>
-                    <% if start_date.future? %>
-                        <p>
-                            registrations not yet open <br />
-                            <small>(please check out in a few days)</small>
-                        </p>
-                    <% else %>
-                        <p>
-                            registrations closed <br />
-                            <small>(sorry, but check out next geek night)</small>
-                        </p>
-                    <% end %>
-                <% end %>
-            </div>
+
         </div>
     </section>
 

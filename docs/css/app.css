@@ -486,7 +486,7 @@ a {
 p {
   font-family: inherit;
   font-weight: 300;
-  font-size: 0.6em;
+  font-size: 0.75em;
   line-height: 1.25;
   margin-bottom: 0.5em;
   text-rendering: optimizeLegibility; }
@@ -3884,13 +3884,6 @@ button, .button {
     color: white;
     line-height: 2; }
 
-.sub-summary {
-    width: 33%;
-    display: block;
-    margin: 0;
-    float: left;
-}
-
 #agenda {
   color: #222222;
   background: #00aa5b url(../img/white-bg.png);
@@ -4034,11 +4027,6 @@ button, .button {
     display: inline-block;
     float: left; }
 
-#location {
-    color: white;
-    background: #222222 url(../img/white-bg.png);
-    background-image: url(../img/dark-bg.jpg);
-}
 #location .row {
   overflow: hidden; }
 #location .address span {
@@ -4069,7 +4057,7 @@ button, .button {
   box-shadow: 17px 19px 20px 0px black; }
 
 .map-address-heading {
-  color: white;
+  color: #00aa5b;
   text-align: center; }
 
 #about {

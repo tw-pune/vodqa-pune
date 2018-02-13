@@ -20,6 +20,12 @@
                 <% if agenda[:subtitle] %>
                     <p><small><%= agenda[:subtitle] %></small></p>
                 <% end %>
+                <% if agenda[:subsection] %>
+                <% @agenda[:subsection] && @agenda[:subsection].each_with_index do |subsection, j| %>
+
+                    <p><small><%= agenda[:subsection] %></small></p>
+                 <% end %>
+                 <% end %>
                 <% if agenda[:image] %>
                     <p><img src="img/speaker/<%= agenda[:image] %>" alt="<%= agenda[:speaker] %>" /></p>
                 <% end %>
